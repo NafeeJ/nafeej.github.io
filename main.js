@@ -25,7 +25,7 @@ TypeWriter.prototype.type = function() {
         typeSpeed = this.delay;
         this.isDeleting = true;
     }
-    else if (this.isDeleting && this.text == '') {
+    else if (this.isDeleting && this.text === '') {
         this.isDeleting = false;
         this.wordIndex++;
         typeSpeed = this.delay / 2;

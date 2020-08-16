@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
 
-body, html {
+html, body {
     background: url("images/code.jpg") fixed center center / cover;
     height: 100vh;
     font-family: 'Raleway';
     color: #ffffff;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
-.front {
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     text-align: center;
+    position: relative;
 }
 
+/* Typing text */
 h1 {
     letter-spacing: 0.075em;
     line-height: 1em;
@@ -24,19 +29,56 @@ h1 {
     font-size: 3.5rem;
     text-shadow: 2px 2px 2px #4d4d4d;
 }
-
 .cursor {
     border-right: 0.2rem solid #ffffff;
     margin-left: 0.2rem;
     animation: blink 1s infinite;
 }
-
 @keyframes blink {
     0%  { border-right: 0.2rem solid #ffffff; }
     49% { border-right: 0.2rem solid #ffffff; }
     50% { border-right: 0.2rem solid transparent; }
     99% { border-right: 0.2rem solid transparent; }
     100%  { border-right: 0.2rem solid #ffffff; }
+}
+
+/* Social media buttons */
+.social-links ul {
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.social-links ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-links ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-links ul li:nth-child(1) a {
+    background-color: #211F1F;
+}
+.social-links ul li:nth-child(2) a {
+    background-color: #0077B5;
+}
+.social-links ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -0.5em);
+    color: #ffffff;
+}
+.social-links ul li i {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 50px;
+    transition: .5s;
 }
 
 @media(min-width: 1200px) {
@@ -52,5 +94,10 @@ h1 {
 
     h1 {
         font-size: 2.5rem;
+    }
+
+    .cursor {
+        border-right: 0.1rem solid #ffffff;
+        margin-left: 0.1rem;
     }
 }
