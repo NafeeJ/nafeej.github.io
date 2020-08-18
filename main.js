@@ -42,4 +42,17 @@ function init() {
     const words = JSON.parse(textElement.getAttribute('data-words'));
 
     new TypeWriter(textElement, words, delay);
+
+    document.getElementById("projects-close-button").addEventListener("click", closeProjectsPanel);
+    document.getElementById("projects-open-button").addEventListener("click", openProjectsPanel);
+
+
+    function closeProjectsPanel() {
+        const projects = document.getElementById("projects");
+        projects.style.display = "none";
+    }
+    function openProjectsPanel() {
+        const projects = document.getElementById("projects");
+        projects.style.display = "block";
+    }
 }
