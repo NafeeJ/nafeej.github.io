@@ -42,9 +42,6 @@ function init() {
     const words = JSON.parse(textElement.getAttribute('data-words'));
 
     new TypeWriter(textElement, words, delay);
-
-    document.getElementById("projects-close-button").addEventListener("click", closeProjectsPanel);
-    document.getElementById("projects-open-button").addEventListener("click", openProjectsPanel);
 }
 
 const projects = document.querySelector(".projects");

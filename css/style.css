@@ -23,13 +23,10 @@ html, body {
 }
 
 /* Typing text */
-#header-text-wrapper {
-    margin: 2rem;
-}
 .header-text {
     letter-spacing: 0.075em;
     line-height: 1em;
-    margin: 0.5rem;
+    margin: 2rem;
     text-transform: uppercase;
     font-size: 3.5rem;
     text-shadow: 2px 2px 2px #4d4d4d;
@@ -52,7 +49,7 @@ html, body {
 
 /* Projects open button */
 #projects-open-button {
-    background-color: transparent;
+    background: radial-gradient(circle, rgba(31,31,31,1) 0%, rgba(52,52,52,1) 100%);
     backdrop-filter: blur(10px);
     border-radius:10px;
     z-index: 1;
@@ -64,7 +61,7 @@ html, body {
 	color: #ffffff;
 	font-size: 1rem;
     padding: 1rem;
-    transition: transform 0.2s linear;
+    transition: 0.2s;
     outline: none;
 }
 #projects-open-button::before {
@@ -78,23 +75,27 @@ html, body {
     transform: translateY(0.2rem);
 }
 
-@media(min-width: 1200px) {
-    .header-text {
-        font-size: 3.5rem;
-    }
-}
-
 @media(max-width: 800px) {
     .header {
         padding: 0 1rem;
     }
 
     .header-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .cursor {
         border-right: 0.1rem solid #ffffff;
         margin-left: 0.1rem;
+    }
+}
+
+@media(max-width: 400px) {
+    .header-text {
+        font-size: 1.7rem;
+    }
+
+    #projects-open-button {
+        font-size: 0.8rem;
     }
 }
