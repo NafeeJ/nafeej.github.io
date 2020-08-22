@@ -1,0 +1,37 @@
+/* Social media buttons */
+
+.social-links ul {
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.social-links ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-links ul li a {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-links ul li:nth-child(1) a {
+    background-color: #211F1F;
+}
+.social-links ul li:nth-child(2) a {
+    background-color: #0077B5;
+}
+.social-links ul li a:hover {
+    transform: translateY(-0.5em);
+}
+.social-links ul li i {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 50px;
+    transition: .5s;
+}

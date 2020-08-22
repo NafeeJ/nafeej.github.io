@@ -45,14 +45,14 @@ function init() {
 
     document.getElementById("projects-close-button").addEventListener("click", closeProjectsPanel);
     document.getElementById("projects-open-button").addEventListener("click", openProjectsPanel);
+}
 
+const projects = document.querySelector(".projects");
 
-    function closeProjectsPanel() {
-        const projects = document.getElementById("projects");
-        projects.style.display = "none";
-    }
-    function openProjectsPanel() {
-        const projects = document.getElementById("projects");
-        projects.style.display = "block";
-    }
+function openProjectsPanel() {
+    projects.className = "projects up";
+}
+
+function closeProjectsPanel() {
+    projects.className = "projects down";
 }

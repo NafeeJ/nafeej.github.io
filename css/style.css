@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
+
+html, body {
+    background: url("../images/code.jpg") fixed center center / cover;
+    height: 100vh;
+    font-family: 'Raleway';
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+}
+
+/* Typing text */
+#header-text-wrapper {
+    margin: 2rem;
+}
+.header-text {
+    letter-spacing: 0.075em;
+    line-height: 1em;
+    margin: 0.5rem;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 2px #4d4d4d;
+    text-align: center;
+    padding: 0;
+    white-space: nowrap;
+}
+#cursor {
+    border-right: 0.1rem solid #ffffff;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%  { border-right: 0.2rem solid #ffffff; }
+    49% { border-right: 0.2rem solid #ffffff; }
+    50% { border-right: 0.2rem solid transparent; }
+    99% { border-right: 0.2rem solid transparent; }
+    100%  { border-right: 0.2rem solid #ffffff; }
+}
+
+/* Projects open button */
+#projects-open-button {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius:10px;
+    z-index: 1;
+    border: 3px solid #141414;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 1rem;
+    padding: 1rem;
+    transition: transform 0.2s linear;
+    outline: none;
+}
+#projects-open-button::before {
+    filter: blur(10px);
+    z-index: -1;
+}
+#projects-open-button:hover {
+    transform: translateY(-0.3rem);
+}
+#projects-open-button:active {
+    transform: translateY(0.2rem);
+}
+
+@media(min-width: 1200px) {
+    .header-text {
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .header-text {
+        font-size: 2.5rem;
+    }
+
+    .cursor {
+        border-right: 0.1rem solid #ffffff;
+        margin-left: 0.1rem;
+    }
+}
