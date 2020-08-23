@@ -11,7 +11,7 @@
         <title>Nafee Jan</title>
     </head>
     
-    <body>
+    <body id="body">
         <header class="header">
             <h1 class="header-text"> Nafee
                 <span class="type-text" data-delay="2000" data-words='["Jan", "Workshop"]'></span>
@@ -21,29 +21,32 @@
             <button id="projects-open-button" onclick="openProjectsPanel()">Projects</button>
         </header>
 
-        <div class="projects down">
-            <button id="projects-close-button" onclick="closeProjectsPanel()"><i class="fas fa-times"></i></button>
+        <div class="projects">
+            <div class="projects-overlay" onclick="closeProjectsPanel()"></div>
+            <div class="projects-content">
+                <button id="projects-close-button" onclick="closeProjectsPanel()"><i class="fas fa-times"></i></button>
 
-            <div class="cards">
-                <div class="card">
-                    <h1>BatteryEstimate</h1>
-                    <p>Brings back the estimated battery time remaining to the menu bar for MacOS</p>
-                    <a href="https://github.com/NafeeJ/BatteryEstimate" target="_blank" class="see-project-button">See Project</a>
-                </div>
-                <div class="card">
-                    <h1>InputPrefs</h1>
-                    <p>Quickly change function row and scrolling defaults on MacOS</p>
-                    <a href="https://github.com/NafeeJ/InputPrefs" target="_blank" class="see-project-button">See Project</a>
-                </div>
-                <div class="card">
-                    <h1>Fumo Bounce</h1>
-                    <p> <em>Bounce Fumos</em>. Simple physics sandbox game built with Unity.</p>
-                    <a href="https://nafeej.github.io/Fumo-Bounce" target="_blank" class="see-project-button">See Project</a>
-                </div>
-                <div class="card">
-                    <h1>Bushido in Samurai Films</h1>
-                    <p>Analyzes the role of bushidō in samurai films.</p>
-                    <a href="https://nafeej.github.io/Bushido-in-Samurai-Films/" target="_blank" class="see-project-button">See Project</a>
+                <div class="cards">
+                    <div class="card">
+                        <h1>BatteryEstimate</h1>
+                        <p>Brings back the estimated battery time remaining to the menu bar for MacOS</p>
+                        <a href="https://github.com/NafeeJ/BatteryEstimate" target="_blank" class="see-project-button">See Project</a>
+                    </div>
+                    <div class="card">
+                        <h1>InputPrefs</h1>
+                        <p>Quickly change function row and scrolling defaults on MacOS</p>
+                        <a href="https://github.com/NafeeJ/InputPrefs" target="_blank" class="see-project-button">See Project</a>
+                    </div>
+                    <div class="card">
+                        <h1>Fumo Bounce</h1>
+                        <p> <em>Bounce Fumos</em>. Simple physics sandbox game built with Unity.</p>
+                        <a href="https://nafeej.github.io/Fumo-Bounce" target="_blank" class="see-project-button">See Project</a>
+                    </div>
+                    <div class="card">
+                        <h1>Bushido in Samurai Films</h1>
+                        <p>Analyzes the role of bushidō in samurai films.</p>
+                        <a href="https://nafeej.github.io/Bushido-in-Samurai-Films/" target="_blank" class="see-project-button">See Project</a>
+                    </div>
                 </div>
             </div>
         </div>

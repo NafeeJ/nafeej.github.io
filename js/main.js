@@ -19,7 +19,7 @@ TypeWriter.prototype.type = function() {
     }
     else this.text = currentWord.substring(0, this.text.length + 1);
 
-    this.textElement.innerHTML = `<span class="text">${this.text}</span>`;
+    this.textElement.innerHTML = `<span class='text'>${this.text}</span>`;
 
     if (!this.isDeleting && this.text === currentWord) {
         typeSpeed = this.delay;
@@ -44,12 +44,22 @@ function init() {
     new TypeWriter(textElement, words, delay);
 }
 
-const projects = document.querySelector(".projects");
+const projects = document.querySelector('.projects');
+const projectsContent = document.querySelector('.projects-content');
+const body = document.getElementById('body');
 
 function openProjectsPanel() {
-    projects.className = "projects up";
+    body.style.cssText = 'overflow: hidden;';
+    projects.style.display = 'flex';
+    projectsContent.style.cssText = 'animation: slide-in 0.5s ease-out; animation-fill-mode: forwards;';
+    setTimeout(() => body.style.cssText = 'overflow: auto;', 500);
 }
 
 function closeProjectsPanel() {
-    projects.className = "projects down";
+    body.style.cssText = 'overflow: hidden;';
+    projectsContent.style.cssText = 'animation: slide-out 0.5s ease-out; animation-fill-mode: forwards;';
+    setTimeout(() => {
+        projects.style.display = 'none';
+        body.style.cssText = 'overflow: auto;';
+    }, 500);
 }
