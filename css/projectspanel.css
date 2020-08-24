@@ -17,7 +17,6 @@
 .projects-content {
     width: 80%;
     height: 100%;
-    left: 10%;
     position: absolute;
     transform: translateX(-100%);
     z-index: 1;
@@ -48,6 +47,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 .card {
     position: relative;
@@ -55,7 +56,6 @@
     transition: 0.2s;
     box-shadow: 0.2em 0.2em 0.2em black;
     padding: 1rem;
-    margin: 1rem;
     background: radial-gradient(circle, rgba(31,31,31,1) 0%, rgba(51,51,51,1) 100%);
 }
 .card:hover {
