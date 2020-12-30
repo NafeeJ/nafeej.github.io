@@ -48,17 +48,17 @@ html, body {
 
 /* Projects open button */
 #projects-open-button {
-    background: radial-gradient(circle, rgba(31,31,31,1) 0%, rgba(51,51,51,1) 100%);
+    /* background: radial-gradient(circle, rgba(31,31,31,1) 0%, rgba(51,51,51,1) 100%); */
+    background-color: rgb(51, 51, 51);
+    color: white;
     backdrop-filter: blur(10px);
-    border-radius: 10px;
+    border-radius: 2rem;
     z-index: 1;
     border: 3px solid black;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
 	display: inline-block;
 	cursor: pointer;
-	color: #ffffff;
-	font-size: 1rem;
+    font-size: 1rem;
     padding: 1rem;
     transition: 0.2s;
     outline: none;
@@ -68,11 +68,11 @@ html, body {
     z-index: -1;
 }
 #projects-open-button:hover {
-    transform: translateY(-0.3rem);
-    background: radial-gradient(circle, rgb(51, 51, 51) 0%, rgb(71, 71, 71) 100%);
+    /* background: radial-gradient(circle, rgb(51, 51, 51) 0%, rgb(71, 71, 71) 100%); */
+    background-color: white;
+    color: black;
 }
 #projects-open-button:active {
-    transform: translateY(0.2rem);
     border: 3px solid white;
 }
 
