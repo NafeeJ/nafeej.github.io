@@ -1,3 +1,25 @@
+const projectsData = {
+    "size": 4,
+    "titles": [
+        "BatteryEstimate",
+        "InputPrefs",
+        "Fumo Bounce",
+        "Bushido in Samurai Films"
+    ],
+    "descriptions": [
+        "Brings back the estimated battery time remaining to the menu bar for MacOS",
+        "Quickly change function row and scrolling defaults on MacOS",
+        "<em>Bounce Fumos</em>. Simple physics sandbox game built with Unity.",
+        "Analyzes the role of bushidō in samurai films."
+    ],
+    "projectLinks": [
+        "https://github.com/NafeeJ/BatteryEstimate",
+        "https://github.com/NafeeJ/InputPrefs",
+        "https://nafeej.github.io/Fumo-Bounce",
+        "https://nafeej.github.io/Bushido-in-Samurai-Films"
+    ]
+}
+
 const TypeWriter = function(textElement, words, delay = 3000) {
     this.textElement = textElement;
     this.words = words;
@@ -49,6 +71,17 @@ function init() {
     const words = JSON.parse(textElement.getAttribute('data-words'));
 
     new TypeWriter(textElement, words, delay);
+
+    const cards = document.querySelector('.cards');
+
+    for (let i = 0; i < projectsData.size; i++) {
+        cards.innerHTML += 
+        `<div class="card">
+            <h1>${projectsData.titles[i]}</h1>
+            <p>${projectsData.descriptions[i]}</p>
+            <a href="${projectsData.projectLinks[i]}" target="_blank" class="see-project-button">See Project</a>
+        </div>`
+    }
 }
 
 const projects = document.querySelector('.projects');
