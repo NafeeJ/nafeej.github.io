@@ -28,7 +28,6 @@ html, body {
     margin: 2rem;
     text-transform: uppercase;
     font-size: 3.5rem;
-    text-shadow: 2px 2px 2px #4d4d4d;
     text-align: center;
     padding: 0;
     white-space: nowrap;
@@ -51,7 +50,6 @@ html, body {
     /* background: radial-gradient(circle, rgba(31,31,31,1) 0%, rgba(51,51,51,1) 100%); */
     background-color: rgb(51, 51, 51);
     color: white;
-    backdrop-filter: blur(10px);
     border-radius: 2rem;
     z-index: 1;
     border: 3px solid black;
