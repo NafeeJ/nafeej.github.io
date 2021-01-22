@@ -30,7 +30,6 @@ html, body {
     font-size: 3.5rem;
     text-align: center;
     padding: 0;
-    white-space: nowrap;
 }
 #cursor {
     border-right: 0.1rem solid #ffffff;
@@ -80,7 +79,7 @@ html, body {
     }
 
     .header-text {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     #cursor {
@@ -91,7 +90,7 @@ html, body {
 
 @media(max-width: 400px) {
     .header-text {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
     }
 
     #projects-open-button {
