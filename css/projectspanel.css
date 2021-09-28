@@ -62,7 +62,7 @@
     padding-bottom: 1rem;
     border-bottom: 0.1rem solid white;
 }
-.see-project-button {
+.see-project-button, .see-repo-button {
     background: rgb(51, 51, 51);
     color: white;
     border: 3px solid black;
@@ -73,11 +73,11 @@
     border-radius: 2rem;
     transition: 0.2s;
 }
-.see-project-button:hover {
+.see-project-button:hover, .see-repo-button:hover {
     background: white;
     color: black;
 }
-.see-project-button:active {
+.see-project-button:active, .see-repo-button:active {
     border: 3px solid white;
 }
 

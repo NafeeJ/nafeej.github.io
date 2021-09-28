@@ -17,11 +17,19 @@ const projectsData = {
         "This website"
     ],
     "projectLinks": [
-        "https://github.com/NafeeJ/BatteryEstimate/",
-        "https://github.com/NafeeJ/InputPrefs/",
+        "https://github.com/NafeeJ/BatteryEstimate/#batteryestimate",
+        "https://github.com/NafeeJ/InputPrefs/#inputprefs",
         "https://nafeej.github.io/Fumo-Bounce/",
         "https://bounce-games.github.io/Holo-Bounce/",
         "https://nafeej.github.io/Bushido-in-Samurai-Films/",
+        "https://nafeej.github.io"
+    ],
+    "repoLinks": [
+        "https://github.com/NafeeJ/BatteryEstimate/",
+        "https://github.com/NafeeJ/InputPrefs/",
+        "https://github.com/NafeeJ/Fumo-Bounce",
+        "https://github.com/Bounce-Games/Holo-Bounce",
+        "https://github.com/NafeeJ/Bushido-in-Samurai-Films",
         "https://github.com/NafeeJ/nafeej.github.io"
     ]
 }
@@ -86,6 +94,7 @@ function init() {
             <h1>${projectsData.titles[i]}</h1>
             <p>${projectsData.descriptions[i]}</p>
             <a href="${projectsData.projectLinks[i]}" target="_blank" class="see-project-button">See Project</a>
+            <a href="${projectsData.repoLinks[i]}" target="_blank" class="see-repo-button">See Repo</a>
         </div>`
     }
 }
