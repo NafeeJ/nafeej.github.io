@@ -1,25 +1,28 @@
 const projectsData = {
-    "size": 5,
+    "size": 6,
     "titles": [
         "BatteryEstimate",
         "InputPrefs",
         "Fumo Bounce",
         "Holo Bounce",
-        "Bushido in Samurai Films"
+        "Bushido in Samurai Films",
+        "Personal Website"
     ],
     "descriptions": [
         "Brings back the estimated battery time remaining to the menu bar for MacOS",
         "Quickly change function row and scrolling defaults on MacOS",
         "<em>Bounce Fumos</em>. Simple physics sandbox game built with Unity.",
         "<em>Bounce Holos</em>. Simple physics sandbox game built with Unity.",
-        "Analyzes the role of bushidō in samurai films."
+        "Analyzes the role of bushidō in samurai films.",
+        "This website"
     ],
     "projectLinks": [
         "https://github.com/NafeeJ/BatteryEstimate/",
         "https://github.com/NafeeJ/InputPrefs/",
         "https://nafeej.github.io/Fumo-Bounce/",
         "https://bounce-games.github.io/Holo-Bounce/",
-        "https://nafeej.github.io/Bushido-in-Samurai-Films/"
+        "https://nafeej.github.io/Bushido-in-Samurai-Films/",
+        "https://github.com/NafeeJ/nafeej.github.io"
     ]
 }
 
