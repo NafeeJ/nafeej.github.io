@@ -1,0 +1,65 @@
+/* Panels */
+
+.panel {
+    position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	justify-content: center;
+    align-items: center;
+}
+
+.panel-overlay {
+    height: 100%;
+    width: 100%;
+}
+
+.panel-content {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    z-index: 1;
+    text-align: center;
+    overflow: auto;
+    background: rgba(35, 35, 35, 0.95);
+}
+
+.panel-close-button {
+	background-color: transparent;
+    border: transparent;
+	cursor: pointer;
+	color: #ffffff;
+    font-size: 3rem;
+    outline: none;
+    margin-top: 1rem;
+    transition: 0.2s;
+}
+.panel-close-button:hover {
+    transform: rotate(90deg);
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes slide-out {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+@media(max-width: 800px) {
+    .projects-content {
+        border-radius: 0px;
+        width: 100%;
+        left: 0%;
+    }
+}

@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/sociallinks.css" />
         <link rel="stylesheet" href="css/projectspanel.css" />
         <link rel="stylesheet" href="css/loadingscreen.css" />
+        <link rel="stylesheet" href="css/panel.css" />
 
         <link rel="shortcut icon" type="image/png" href="images/github-pfp-round.png"/>
 
@@ -43,10 +44,10 @@
             </div>
         </header>
 
-        <div class="projects">
-            <div class="projects-overlay" onclick="closeProjectsPanel()"></div>
-            <div class="projects-content">
-                <button id="projects-close-button" onclick="closeProjectsPanel()"><i class="fas fa-times"></i></button>
+        <div class="panel">
+            <div class="panel-overlay" onclick="closeProjectsPanel()"></div>
+            <div class="panel-content">
+                <button class="panel-close-button" onclick="closeProjectsPanel()"><i class="fas fa-times"></i></button>
                 <div class="cards"></div>
             </div>
         </div>

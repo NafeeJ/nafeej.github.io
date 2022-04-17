@@ -99,8 +99,8 @@ function init() {
     }
 }
 
-const projects = document.querySelector('.projects');
-const projectsContent = document.querySelector('.projects-content');
+const projects = document.querySelector('.panel');
+const projectsContent = document.querySelector('.panel-content');
 const body = document.getElementById('body');
 
 function openProjectsPanel() {
