@@ -89,23 +89,42 @@
     padding-bottom: 1rem;
     border-bottom: 0.1rem solid white;
 }
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .see-project-button, .see-repo-button {
-    background: rgb(51, 51, 51);
     color: white;
-    border: 3px solid black;
+    border: 2px solid black;
     display: inline-block;
     text-decoration-color: none;
-    padding: 0.8rem;
     text-decoration: none;
     border-radius: 2rem;
     transition: 0.2s;
+}
+.see-project-button {
+    background: rgb(51, 51, 51);
+    margin-right: 0.5rem;
+    padding: 0.8rem;
+}
+.see-repo-button {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    font-size: 2.5rem;
+    line-height: 50px;
 }
 .see-project-button:hover, .see-repo-button:hover {
     background: white;
     color: black;
 }
-.see-project-button:active, .see-repo-button:active {
-    border: 3px solid white;
+.see-project-button:active {
+    border: 2px solid white;
 }
 
 /* About me panel */

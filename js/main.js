@@ -109,8 +109,10 @@ function init() {
         `<div class="card">
             <h1>${projectsData.titles[i]}</h1>
             <p>${projectsData.descriptions[i]}</p>
-            <a href="${projectsData.projectLinks[i]}" target="_blank" class="see-project-button">See Project</a>
-            <a href="${projectsData.repoLinks[i]}" target="_blank" class="see-repo-button">See Repo</a>
+            <div class="card-buttons">
+                <a href="${projectsData.projectLinks[i]}" target="_blank" class="see-project-button">See Project</a>
+                <a href="${projectsData.repoLinks[i]}" target="_blank" class="see-repo-button"><i class="fab fa-github"></i></a>
+            </div>
         </div>`
     }
 
