@@ -69,11 +69,13 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    align-items: center;
     gap: 1rem;
     padding: 1rem;
 }
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 10px;
     transition: 0.2s;
     box-shadow: 0 0 5px black;
@@ -87,12 +89,14 @@
 }
 .card > h1 {
     padding-bottom: 1rem;
+    margin: 0;
     border-bottom: 0.1rem solid white;
 }
 .card-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
 }
 .see-project-button, .see-repo-button {
     color: white;

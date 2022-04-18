@@ -5,7 +5,7 @@ const projectsData = {
         "InputPrefs",
         "Fumo Bounce",
         "Holo Bounce",
-        "Bushido in Samurai Films",
+        "Bushidō in Samurai Films",
         "Personal Website",
         "CS 1660 Project",
         "osu!keep"
@@ -13,9 +13,9 @@ const projectsData = {
     "descriptions": [
         "Brings back the estimated battery time remaining to the menu bar for MacOS",
         "Quickly change function row and scrolling defaults on MacOS",
-        "<em>Bounce Fumos</em>. Simple physics sandbox game built with Unity.",
-        "<em>Bounce Holos</em>. Simple physics sandbox game built with Unity.",
-        "Analyzes the role of bushidō in samurai films.",
+        "<em>Bounce Fumos</em>. Simple physics sandbox game built with Unity",
+        "<em>Bounce Holos</em>. Simple physics sandbox game built with Unity",
+        "Analyzes the role of bushidō in samurai films",
         "This website",
         "Final project for Intro to Cloud Computing. Guide to deploy an environment with Jupyter Notebook and Spark on Google Kubernetes Engine cluster",
         "Website to see data on osu! player data and keep scores (wip)"
