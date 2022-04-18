@@ -113,6 +113,20 @@ function init() {
             <a href="${projectsData.repoLinks[i]}" target="_blank" class="see-repo-button">See Repo</a>
         </div>`
     }
+
+    //Aboutme panel init
+
+    const aboutme = document.getElementById('aboutme-panel');
+    const aboutmeContent = document.getElementById('aboutme-panel-content');
+
+    aboutmeButton = document.getElementById('aboutme-button');
+    aboutmeButton.addEventListener('click', () => openProjectsPanel(aboutme, aboutmeContent));
+
+    aboutmePanelOverlay = document.getElementById('aboutme-panel-overlay');
+    aboutmePanelOverlay.addEventListener('click', () => closeProjectsPanel(aboutme, aboutmeContent));
+
+    aboutmePanelCloseButton = document.getElementById('aboutme-panel-close-button');
+    aboutmePanelCloseButton.addEventListener('click', () => closeProjectsPanel(aboutme, aboutmeContent));
 }
 
 function openProjectsPanel(panel, panelContent) {
