@@ -1,12 +1,14 @@
 const projectsData = {
-    "size": 6,
+    "size": 8,
     "titles": [
         "BatteryEstimate",
         "InputPrefs",
         "Fumo Bounce",
         "Holo Bounce",
         "Bushido in Samurai Films",
-        "Personal Website"
+        "Personal Website",
+        "CS 1660 Project",
+        "osu!keep"
     ],
     "descriptions": [
         "Brings back the estimated battery time remaining to the menu bar for MacOS",
@@ -14,7 +16,9 @@ const projectsData = {
         "<em>Bounce Fumos</em>. Simple physics sandbox game built with Unity.",
         "<em>Bounce Holos</em>. Simple physics sandbox game built with Unity.",
         "Analyzes the role of bushidō in samurai films.",
-        "This website"
+        "This website",
+        "Final project for Intro to Cloud Computing. Guide to deploy an environment with Jupyter Notebook and Spark on Google Kubernetes Engine cluster",
+        "Website to see data on osu! player data and keep scores (wip)"
     ],
     "projectLinks": [
         "https://github.com/NafeeJ/BatteryEstimate/#batteryestimate",
@@ -22,7 +26,9 @@ const projectsData = {
         "https://nafeej.github.io/Fumo-Bounce/",
         "https://bounce-games.github.io/Holo-Bounce/",
         "https://nafeej.github.io/Bushido-in-Samurai-Films/",
-        "https://nafeej.github.io"
+        "https://nafeej.github.io",
+        "https://github.com/NafeeJ/cs1660/tree/master/Course-Project#course-project---big-data-toolbox",
+        "https://osu-keep.appspot.com/"
     ],
     "repoLinks": [
         "https://github.com/NafeeJ/BatteryEstimate/",
@@ -30,7 +36,9 @@ const projectsData = {
         "https://github.com/NafeeJ/Fumo-Bounce",
         "https://github.com/Bounce-Games/Holo-Bounce",
         "https://github.com/NafeeJ/Bushido-in-Samurai-Films",
-        "https://github.com/NafeeJ/nafeej.github.io"
+        "https://github.com/NafeeJ/nafeej.github.io",
+        "https://github.com/NafeeJ/cs1660/tree/master/Course-Project",
+        "https://github.com/NafeeJ/osu-keep"
     ]
 }
 
