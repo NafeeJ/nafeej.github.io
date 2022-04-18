@@ -80,14 +80,30 @@ window.addEventListener('load', function() {
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
+
+    //Typing text init
+
     const textElement = document.querySelector('.type-text');
     const delay = textElement.getAttribute('data-delay');
     const words = JSON.parse(textElement.getAttribute('data-words'));
 
     new TypeWriter(textElement, words, delay);
 
-    const cards = document.querySelector('.cards');
+    //Projects panel init
 
+    const projects = document.getElementById('projects-panel');
+    const projectsContent = document.getElementById('projects-panel-content');
+
+    projectsButton = document.getElementById('projects-button');
+    projectsButton.addEventListener('click', () => openProjectsPanel(projects, projectsContent));
+
+    projectsPanelOverlay = document.getElementById('projects-panel-overlay');
+    projectsPanelOverlay.addEventListener('click', () => closeProjectsPanel(projects, projectsContent));
+
+    projectsPanelCloseButton = document.getElementById('projects-panel-close-button');
+    projectsPanelCloseButton.addEventListener('click', () => closeProjectsPanel(projects, projectsContent));
+
+    const cards = document.querySelector('.cards');
     for (let i = 0; i < projectsData.size; i++) {
         cards.innerHTML += 
         `<div class="card">
@@ -99,22 +115,22 @@ function init() {
     }
 }
 
-const projects = document.querySelector('.panel');
-const projectsContent = document.querySelector('.panel-content');
-const body = document.getElementById('body');
+function openProjectsPanel(panel, panelContent) {
+    const body = document.getElementById('body');
 
-function openProjectsPanel() {
     body.style.cssText = 'overflow: hidden;';
-    projects.style.display = 'flex';
-    projectsContent.style.cssText = 'animation: slide-in 0.5s ease-out; animation-fill-mode: forwards;';
+    panel.style.display = 'flex';
+    panelContent.style.cssText = 'animation: slide-in 0.5s ease-out; animation-fill-mode: forwards;';
     setTimeout(() => body.style.cssText = 'overflow: auto;', 500);
 }
 
-function closeProjectsPanel() {
+function closeProjectsPanel(panel, panelContent) {
+    const body = document.getElementById('body');
+
     body.style.cssText = 'overflow: hidden;';
-    projectsContent.style.cssText = 'animation: slide-out 0.5s ease-out; animation-fill-mode: forwards;';
+    panelContent.style.cssText = 'animation: slide-out 0.5s ease-out; animation-fill-mode: forwards;';
     setTimeout(() => {
-        projects.style.display = 'none';
+        panel.style.display = 'none';
         body.style.cssText = 'overflow: auto;';
     }, 500);
 }

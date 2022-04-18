@@ -38,16 +38,16 @@
 
             <div class="nav-buttons">
                 <ul>
-                    <li><a onclick="openProjectsPanel()">Projects</a></li>
+                    <li><a id="projects-button">Projects</a></li>
                     <li><a href="https://docs.google.com/document/d/1R7S0hkn640z5lq41_0K0tns2uVxdvqUUusYynnrpPlw/edit?usp=sharing" target="_blank">Resume</a></li>
                 </ul>
             </div>
         </header>
 
-        <div class="panel">
-            <div class="panel-overlay" onclick="closeProjectsPanel()"></div>
-            <div class="panel-content">
-                <button class="panel-close-button" onclick="closeProjectsPanel()"><i class="fas fa-times"></i></button>
+        <div class="panel" id="projects-panel">
+            <div class="panel-overlay" id="projects-panel-overlay"></div>
+            <div class="panel-content" id="projects-panel-content">
+                <button class="panel-close-button" id="projects-panel-close-button"><i class="fas fa-times"></i></button>
                 <div class="cards"></div>
             </div>
         </div>
