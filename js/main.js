@@ -1,26 +1,29 @@
 const projectsData = {
-    "size": 8,
+    "size": 9,
     "titles": [
+        "JotDown",
+        "osu!keep",
         "BatteryEstimate",
         "InputPrefs",
         "Fumo Bounce",
         "Holo Bounce",
         "Bushidō in Samurai Films",
         "Personal Website",
-        "CS 1660 Project",
-        "osu!keep"
+        "Big Data Toolbox"
     ],
     "descriptions": [
+        "Novel chat-based journaling/notes mobile app",
+        "Website to see data on osu! player data and keep scores (wip)",
         "Brings back the estimated battery time remaining to the menu bar for MacOS",
         "Quickly change function row and scrolling defaults on MacOS",
         "<em>Bounce Fumos</em>. Simple physics sandbox game built with Unity",
         "<em>Bounce Holos</em>. Simple physics sandbox game built with Unity",
         "Analyzes the role of bushidō in samurai films",
         "This website",
-        "Final project for Intro to Cloud Computing. Guide to deploy an environment with Jupyter Notebook and Spark on Google Kubernetes Engine cluster",
-        "Website to see data on osu! player data and keep scores (wip)"
+        "Final project for Intro to Cloud Computing. Guide to deploy an environment with Jupyter Notebook and Spark on Google Kubernetes Engine cluster"
     ],
     "projectLinks": [
+        "https://github.com/kevinjcorcoran/jot_down",
         "https://github.com/NafeeJ/BatteryEstimate/#batteryestimate",
         "https://github.com/NafeeJ/InputPrefs/#inputprefs",
         "https://nafeej.github.io/Fumo-Bounce/",
@@ -28,17 +31,18 @@ const projectsData = {
         "https://nafeej.github.io/Bushido-in-Samurai-Films/",
         "https://nafeej.github.io",
         "https://github.com/NafeeJ/cs1660/tree/master/Course-Project#course-project---big-data-toolbox",
-        "https://osu-keep.appspot.com/"
+        "https://github.com/NafeeJ/osu-keep"
     ],
     "repoLinks": [
+        "https://github.com/kevinjcorcoran/jot_down",
+        "https://github.com/NafeeJ/osu-keep",
         "https://github.com/NafeeJ/BatteryEstimate/",
         "https://github.com/NafeeJ/InputPrefs/",
         "https://github.com/NafeeJ/Fumo-Bounce",
         "https://github.com/Bounce-Games/Holo-Bounce",
         "https://github.com/NafeeJ/Bushido-in-Samurai-Films",
         "https://github.com/NafeeJ/nafeej.github.io",
-        "https://github.com/NafeeJ/cs1660/tree/master/Course-Project",
-        "https://github.com/NafeeJ/osu-keep"
+        "https://github.com/NafeeJ/cs1660/tree/master/Course-Project"
     ]
 }
 
