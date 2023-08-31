@@ -24,14 +24,15 @@ const projectsData = {
     ],
     "projectLinks": [
         "https://github.com/kevinjcorcoran/jot_down",
+        "https://github.com/NafeeJ/osu-keep",
         "https://github.com/NafeeJ/BatteryEstimate/#batteryestimate",
         "https://github.com/NafeeJ/InputPrefs/#inputprefs",
         "https://nafeej.github.io/Fumo-Bounce/",
         "https://bounce-games.github.io/Holo-Bounce/",
         "https://nafeej.github.io/Bushido-in-Samurai-Films/",
         "https://nafeej.github.io",
-        "https://github.com/NafeeJ/cs1660/tree/master/Course-Project#course-project---big-data-toolbox",
-        "https://github.com/NafeeJ/osu-keep"
+        "https://github.com/NafeeJ/cs1660/tree/master/Course-Project#course-project---big-data-toolbox"
+
     ],
     "repoLinks": [
         "https://github.com/kevinjcorcoran/jot_down",
